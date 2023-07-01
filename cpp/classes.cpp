@@ -25,8 +25,15 @@ public:
 
 int main()
 {
-    Car suv;
-    Car sedan;
-    Car van;
+    Car my_car;
+
+    // initialize variables of my_car
+    my_car.brand = "Honda";
+    my_car.model = "Accord";
+    my_car.drive(50);
+
+    // display object variables
+    my_car.show_data();
+
     return 0;
 }
