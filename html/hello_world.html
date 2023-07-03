@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello!</title>
+  </head>
+
+  <body>
+    <section>
+      <!-- Each individual blog post is an <article> -->
+      <article>
+        <header>
+          <h1>Blog Post</h1>
+          <time datetime="2016-03-13">13th March 2016</time>
+        </header>
+        <p>
+          The article element represents a self contained article or document.
+        </p>
+        <p>The section element represents a grouping of content.</p>
+        <section>
+          <h2>Comments <small>relating to "Blog Post"</small></h2>
+          <!-- Related comment is also a self-contained article -->
+          <article id="user-comment-1">
+            <p>Excellent!</p>
+            <footer>
+              <p>...</p>
+              <time>...</time>
+            </footer>
+          </article>
+        </section>
+      </article>
+      <!-- ./repeat: <article> -->
+    </section>
+    <!-- Content unrelated to the blog or posts should be outside the section. -->
+    <footer>
+      <p>This content should be unrelated to the blog.</p>
+    </footer>
+    
+    <div role="banner">
+      <h1>My Site</h1>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <body>
+      <header>
+        <nav>...</nav>
+      </header>
+      <main>
+        <h1>Individual Blog Post</h1>
+        <p>An introduction for the post.</p>
+        <article>
+          <h2>References</h2>
+          <p>...</p>
+        </article>
+        <article>
+          <h2>Comments</h2>
+          ...
+        </article>
+      </main>
+      <footer>...</footer>
+    </body>
+
+    <input list="Languages" />
+    <datalist id="Languages">
+      <option value="PHP"></option>
+      <option value="Perl"></option>
+      <option value="Python"></option>
+      <option value="Ruby"></option>
+      <option value="C+"></option>
+    </datalist>
+
+    <select name="">
+      <option value="milk">Milk</option>
+      <optgroup label="Fruits">
+        <option value="banana">Bananas</option>
+        <option value="strawberry">Strawberries</option>
+      </optgroup>
+      <optgroup label="Vegetables" disabled>
+        <option value="carrot">Carrots</option>
+        <option value="zucchini">Zucchini</option>
+      </optgroup>
+    </select>
+
+    <article>
+      <header>
+        <h2>Blog Post</h2>
+      </header>
+      <p>An introduction for the post.</p>
+      <section>
+        <h3>Chapter 1</h3>
+        <p>...</p>
+      </section>
+      <section>
+        <h3>Chapter 2</h3>
+        <p>...</p>
+      </section>
+      <section>
+        <h3>Comments</h3>
+        ...
+      </section>
+    </article>
+
+    <body>
+      <table role="grid">
+        <thead>
+          <!-- etc -->
+        </thead>
+        <tbody>
+          <!-- etc -->
+        </tbody>
+      </table>
+      <table role="grid">
+        <thead>
+          <!-- etc -->
+        </thead>
+        <tbody>
+          <tr>
+            <td role="gridcell">17</td>
+          </tr>
+          <tr>
+            <td role="gridcell">64</td>
+          </tr>
+          <tr>
+            <td role="gridcell">18</td>
+          </tr>
+        </tbody>
+      </table>
+    </body>
+
+    <div role="form">
+      <input type="email" placeholder="Your email address" />
+      <button>Sign up</button>
+    </div>
+    <form action="">
+      <fieldset>
+        <legend>Login form</legend>
+        <div>
+          <label for="username">Your username</label>
+          <input
+            type="text"
+            id="username"
+            aria-describedby="username-tip"
+            required
+          />
+          <div role="tooltip" id="username-tip">
+            Your username is your email address
+          </div>
+        </div>
+        <div>
+          <label for="password">Your password</label>
+          <input
+            type="text"
+            id="password"
+            aria-describedby="password-tip"
+            required
+          />
+          <div role="tooltip" id="password-tip">
+            Was emailed to you when you signed up
+          </div>
+        </div>
+      </fieldset>
+    </form>
+    <h1>Hello Chudi!</h1>
+    <p>This is a simple paragraph.</p>
+
+    <h1>Table of Contents</h1>
+    <a href="#Topic1">Click to jump to the First Topic</a>
+    <a href="#Topic2">Click to jump to the Second Topic</a>
+
+    <h2 id="Topic1">First topic</h2>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque nulla
+      atque, recusandae quisquam voluptatem non impedit! Dignissimos, hic quos!
+      A fugiat tempora vero natus magni doloremque magnam! Cum doloribus tenetur
+      velit ipsam. Eius aspernatur tempore aperiam quasi voluptatibus ab iure
+      sunt sequi laborum voluptas commodi, mollitia et saepe nihil vel
+      consectetur, officia reiciendis! Obcaecati labore consequuntur ipsam
+      quaerat ab deserunt praesentium molestiae, saepe sapiente possimus, sequi
+      modi. Quod magni voluptas aut, sunt praesentium voluptates odit totam
+      expedita iure reiciendis tenetur eligendi nulla suscipit, optio nesciunt!
+      Corporis ducimus eius tempora, nulla pariatur, eveniet quis vero id
+      provident veniam error sed quo. Illum recusandae quo autem porro
+      repellendus aliquid natus modi sed, in ratione non suscipit soluta
+      adipisci, beatae quia? Nostrum obcaecati minima libero iste ex similique
+      repellendus nam laudantium eius rerum, saepe cum illo eum voluptates esse
+      corporis consectetur porro perspiciatis sed! Dicta tempora quae expedita
+      beatae natus alias. Numquam, quaerat, natus eos, quos molestias facere
+      officiis nostrum consectetur modi atque architecto ut optio debitis
+      cupiditate tenetur? Sunt, autem expedita. Explicabo earum maxime quidem
+      adipisci aliquid consequatur consectetur possimus iure quam laborum illo
+      qui aut fugiat libero nemo doloremque hic dicta dolorum nostrum eum,
+      accusantium doloribus maiores praesentium. Magnam blanditiis quas beatae
+      laborum ad accusamus quasi nobis quod culpa qui eos, placeat porro
+      consequatur et vero incidunt eveniet error veniam aliquid saepe odit
+      expedita. Itaque ut voluptatibus dolorum architecto dolor suscipit,
+      perspiciatis culpa! Doloremque totam at quidem debitis cum sunt eligendi
+      quaerat ducimus delectus sed nesciunt inventore accusamus voluptatibus
+      consequatur sit alias modi iusto, atque possimus. Quod laudantium a magni
+      iusto harum? Ea eaque nihil unde, eius exercitationem voluptates veritatis
+      iste repellat nemo vitae perferendis sit maiores ullam vel animi doloribus
+      quia labore minima eligendi! Eaque illo maxime modi quos aliquid.
+      Excepturi, mollitia, expedita quisquam impedit molestiae perspiciatis
+      dolorum distinctio enim quasi eos, harum eveniet voluptatum. Quisquam
+      perspiciatis veniam ea maiores! Vel delectus doloribus repellat iste
+      consectetur alias. Perspiciatis inventore officia sint omnis. Accusantium
+      omnis earum ullam inventore numquam commodi quos maxime non eligendi, nisi
+      nesciunt modi animi labore necessitatibus unde tenetur eius laborum!
+      Dolores sunt porro, minima aliquid impedit mollitia reprehenderit aut
+      quod. Est in repellendus cumque distinctio consequatur a ducimus
+      praesentium officia accusamus eaque perferendis nobis placeat numquam
+      similique ipsa laudantium labore, unde dolorum quibusdam voluptatem. Harum
+      animi, totam dicta aut quaerat, laborum beatae aliquid quos, illum rem
+      nulla ut! Quas reprehenderit ducimus nobis hic blanditiis impedit
+      accusantium, assumenda autem asperiores, voluptatum quam voluptates
+      inventore, aliquam sapiente? Fugiat dolor molestiae provident, veniam
+      doloribus temporibus ratione exercitationem aspernatur nesciunt aperiam
+      vitae nisi voluptatibus, ex inventore a quidem placeat libero quas! Nam
+      asperiores rem id impedit error voluptates cupiditate, placeat ducimus
+      corrupti. Excepturi, at iure, odio corporis magni quaerat temporibus, quos
+      cupiditate aspernatur sint soluta distinctio expedita perspiciatis porro
+      quibusdam facere? Alias rerum voluptates aperiam obcaecati, ab iure
+      doloribus exercitationem quisquam harum earum. Sit, nesciunt maiores!
+      Natus qui dolores itaque eum vel obcaecati! Porro consequatur impedit,
+      commodi obcaecati ipsum quod aliquam. Quos explicabo dolore quia, a earum
+      odit necessitatibus natus similique!
+    </p>
+
+    <h2 id="Topic2">Second topic</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque alias,
+      libero quaerat doloribus possimus perferendis quia a rem distinctio velit
+      tempore minus odio temporibus pariatur est ad fuga dolore id explicabo
+      tempora quos. Doloribus est dolorem dignissimos ab praesentium corporis
+      animi impedit velit iste magni laboriosam explicabo similique repudiandae
+      assumenda delectus earum veritatis, tempore dolor, ea labore quo nesciunt
+      minima. Aspernatur illum voluptates explicabo eum quis eligendi excepturi
+      iure fugiat nihil nostrum, facilis voluptatem corrupti itaque rem expedita
+      nobis recusandae corporis culpa doloribus architecto ratione eius ex!
+      Repellat dolorum, beatae in accusantium blanditiis mollitia ipsa eius
+      dignissimos non voluptatem eaque? Commodi, fugit! Alias, iste in a
+      nostrum, perspiciatis sit vitae ad eos cupiditate hic odit consequuntur
+      deleniti autem quis quisquam. Asperiores sequi unde quod animi eius, dolor
+      voluptates ipsam laudantium velit. Nobis id aperiam veritatis explicabo
+      recusandae, fugit nemo accusantium labore obcaecati voluptates delectus
+      blanditiis fugiat voluptatibus deserunt. Obcaecati, aperiam? Quisquam
+      explicabo, harum voluptates quaerat quo repellat enim laudantium eius est
+      doloribus ipsa et, saepe iusto adipisci a ratione natus totam ullam
+      expedita laborum neque aut? Quisquam neque odit atque consequatur
+      provident. Porro iste nesciunt in accusantium fugit natus vero deserunt
+      sint sequi, doloribus, excepturi eaque quas? Quod, temporibus dolore?
+      Remember, you can always
+      <a href="hello_world.html#Topic1">look back in the First Topic</a> for
+      supporting information.
+    </p>
+
+    <h2 id="About">About</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+      repudiandae maxime eaque cum sequi quos corporis, atque libero tempore
+      consequuntur facere, nobis voluptas, ea distinctio? Quaerat provident
+      repellat sit. Velit natus expedita ad nostrum, error ab officia ratione
+      architecto possimus numquam et blanditiis tempora non rerum reiciendis
+      asperiores molestias? Iure.
+    </p>
+
+    <h2 id="Contact">Contact</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam minus,
+      placeat molestias consequuntur nisi ipsa sequi blanditiis. Error qui
+      asperiores officia quis voluptatem.
+    </p>
+
+    <div role="alertdialog">
+      <h1>Warning</h1>
+      <div role="alert">Your session will expire in 60 seconds.</div>
+    </div>
+
+    <div role="application">
+      <h1>Calculator</h1>
+      <input id="num1" type="text" /> + <input id="num2" type="text" /> =
+      <span id="result"></span>
+    </div>
+
+    <button role="button">Add</button>
+
+    <article>
+      <h1>My first article</h1>
+      <p>Lorem ipsum...</p>
+    </article>
+
+    <div role="article">
+      <h1>My first article</h1>
+      <p>Lorem ipsum...</p>
+    </div>
+
+    <table>
+      <thead>
+        <!-- etc -->
+      </thead>
+      <p>This is a table!</p>
+      <tbody>
+        <td role="cell">First Name</td>
+        <td role="cell">Last Name</td>
+        <td role="cell">Role</td>
+      </tbody>
+      <tbody>
+        <td role="cell">John</td>
+        <td role="cell">Doe</td>
+        <td role="cell">Manager</td>
+      </tbody>
+      <tbody>
+        <td role="cell">Jane</td>
+        <td role="cell">Amber</td>
+        <td role="cell">Project Lead</td>
+      </tbody>
+    </table>
+
+    <p>
+      <input type="checkbox" role="checkbox" aria-checked="false" />
+      I agree to the terms
+    </p>
+
+    <table role="grid">
+      <thead>
+        <tr>
+          <th role="columnheader">Day 1</th>
+          <th role="columnheader">Day 2</th>
+          <th role="columnheader">Day 3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- etc -->
+      </tbody>
+    </table>
+
+    <input type="text" role="combobox" aria-expanded="false" />
+
+    <p role="contentinfo">
+      Author: Albert Einstein<br />
+      Published: August 15, 1940
+    </p>
+
+    <div role="complementary">
+      <h2>More Articles</h2>
+      <ul>
+        <!-- etc -->
+      </ul>
+    </div>
+
+    <span role="term" aria-labelledby="def1">Love</span>
+    <span id="def1" role="definition"
+      >an intense feeling of deep affection.</span
+    >
+  </body>
+  <body>
+    <div role="dialog">
+      <p>Are you sure?</p>
+      <button role="button">Yes</button>
+      <button role="button">No</button>
+    </div>
+
+    <ul role="directory">
+      <li><a href="#Chapter1">Chapter 1</a></li>
+      <li><a href="#Chapter2">Chapter 2</a></li>
+      <li><a href="#Chapter1">Chapter 3</a></li>
+    </ul>
+  </body>
+  <body>
+    <h2 id="Chapter1">Beyond the Lorem</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, odio
+      accusamus. Tempore corrupti numquam dolores quidem ex quas nesciunt
+      debitis laboriosam illum fuga quisquam quae optio dolore quia esse
+      pariatur ducimus vero tenetur, aspernatur maxime repudiandae voluptatibus
+      sequi soluta incidunt! Officiis doloribus voluptas, iure numquam fugit
+      consectetur! Cumque, quo. Modi id, voluptatem facilis magnam cumque
+      aperiam doloremque soluta iure animi, facere non excepturi tempora
+      impedit, eligendi repudiandae dolor aut minus dicta harum. Illo, quis qui
+      alias sit fuga quasi ad rem illum harum, consectetur tempora consequatur
+      molestias! Eius, ipsa velit doloribus ab fugit commodi debitis sapiente ex
+      facilis animi error suscipit eveniet similique numquam assumenda natus sit
+      quae saepe, ducimus nesciunt excepturi? Nesciunt, voluptatibus quas illo
+      totam velit nostrum dicta fugiat voluptate, voluptatem libero dolor eius
+      saepe nisi ipsum tempore voluptatum perspiciatis mollitia repellat enim
+      hic, cumque eligendi itaque obcaecati. Molestiae nesciunt beatae facilis
+      illum odit, blanditiis voluptas incidunt quae perferendis dolores ex
+      deleniti inventore earum mollitia. Praesentium corporis dignissimos
+      tempore minus. Delectus exercitationem nobis sapiente adipisci, illum
+      inventore, autem minus in amet nemo saepe error reprehenderit ab deleniti
+      quam quisquam nesciunt dignissimos minima neque laudantium? Recusandae,
+      laudantium corrupti rerum omnis odio eum corporis. Cupiditate ullam alias
+      sit minima exercitationem?
+    </p>
+    <h2 id="Chapter2">The Boy who Cried Ipsum</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis soluta
+      totam ut itaque illo praesentium officiis dolor, eaque ipsa id repudiandae
+      blanditiis odit hic deleniti officia numquam laborum veniam, tempore
+      consectetur quis perferendis dolore ea. Non nostrum mollitia iusto ipsa
+      necessitatibus ullam tenetur? Repellat animi labore in odio cum, deserunt
+      nulla. Veritatis neque minima corrupti deserunt aut numquam?
+      Necessitatibus repellendus quos, fugiat earum voluptas adipisci incidunt,
+      sit ea natus, architecto in nemo eaque. Sapiente at eum voluptatum sint
+      sequi minus explicabo quod illo corporis repellendus exercitationem neque
+      aperiam impedit similique vero distinctio dignissimos nostrum id, cum
+      fugit molestiae eos! Sed quidem quaerat, aliquam voluptates nobis cum
+      magnam cupiditate delectus pariatur atque quia sequi ab itaque non debitis
+      excepturi modi qui sunt voluptatem eaque esse. Modi debitis dignissimos
+      dolorem reiciendis dolores, hic provident consectetur, vero illum odit
+      vitae voluptate velit. Eaque repudiandae quas autem quasi numquam?
+      Similique ea dolorum, saepe inventore delectus cum libero, quo impedit eum
+      eaque ducimus aliquid nostrum eius quam, eos at velit fuga corporis ex!
+      Nemo nostrum nulla aspernatur expedita quaerat deserunt ea commodi
+      nesciunt est at, optio ipsa, incidunt alias, vel facere iusto unde
+      molestiae? Quibusdam modi officiis, corporis facere accusantium, nobis,
+      similique ut a earum dolorum quia at rerum magnam obcaecati sunt maxime
+      minus eius magni. In illum porro incidunt repudiandae. Repellat
+      praesentium expedita doloremque assumenda cum, officiis libero aperiam
+      soluta adipisci suscipit reprehenderit facilis. Ut pariatur commodi
+      accusantium eaque. Deserunt perspiciatis nihil amet beatae. Dolor quidem
+      quae culpa, dicta quasi consequuntur mollitia reprehenderit eveniet rem
+      nulla, ipsum porro ducimus necessitatibus aliquid debitis blanditiis.
+      Itaque facere aspernatur ratione porro tempore, et accusantium laboriosam!
+      Quam voluptate rerum excepturi amet at quis nulla quaerat, quas quos
+      aliquam repellat officiis porro cumque minima possimus nesciunt fuga ab.
+      Sunt architecto cum veritatis, beatae porro nobis at blanditiis sint rem
+      itaque quia laudantium omnis praesentium? Iusto impedit fuga tenetur
+      itaque fugiat voluptas consectetur sint mollitia maiores? Dolorum ut
+      aspernatur perspiciatis nesciunt, accusantium quas officiis maxime
+      voluptate magnam officia dolorem distinctio culpa doloremque. Velit
+      delectus sunt officia ab minus? Maxime recusandae aliquid cupiditate
+      voluptatum doloribus iusto illo quasi ad similique, fugit consequuntur
+      accusamus a numquam ipsa eum cumque ut earum provident minus minima quia
+      maiores consectetur animi? Nesciunt, repudiandae. Nam dicta asperiores,
+      recusandae reprehenderit dolore aperiam dolorem deleniti beatae! Animi
+      repellendus commodi, tempore voluptates quia ab itaque ad ipsum quis,
+      porro et natus enim nesciunt cum distinctio corporis. Consectetur, beatae
+      voluptas?
+    </p>
+    <h2 id="Chapter3">'Dolor Sit', is what she said!</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem
+      consequuntur quasi libero cumque dolor sit porro earum delectus molestiae
+      repellat ut, voluptatibus officia quod fugit, obcaecati dolores, eveniet
+      sapiente? Quasi libero natus, facilis, similique cum voluptates optio
+      nobis deserunt sint tempora consequatur dolorem. Facilis esse
+      necessitatibus voluptatibus enim pariatur eum itaque adipisci optio nihil
+      amet eos mollitia aliquam, perferendis corrupti id fuga natus rem quos
+      debitis obcaecati! Laboriosam facere, quo a ut qui praesentium, magni aut
+      eligendi assumenda necessitatibus illum eum aliquam itaque, eaque nesciunt
+      voluptas at id aperiam. Ipsam illum ut, quam commodi, aliquid impedit
+      culpa velit eaque doloribus atque placeat quo maxime distinctio
+      perspiciatis pariatur a? Dicta ut odit alias debitis deserunt ipsa
+      consectetur dolor adipisci dolores blanditiis. Mollitia cupiditate iure,
+      atque itaque ipsa optio omnis! Tenetur quos accusantium ipsa eius, nihil
+      dolorem perferendis nostrum fuga iure! Quas ea rerum hic cumque quia iure,
+      error aliquid voluptate officiis. Eaque quas saepe illo consequatur
+      accusamus iure obcaecati ipsa quisquam sapiente. Nostrum, commodi placeat
+      quia odit sunt nesciunt cumque vero, perspiciatis deleniti nulla ab hic?
+      Culpa rerum porro illum veniam laboriosam ipsam perspiciatis quidem
+      voluptatibus nemo voluptates alias, iste cumque ab vel sed provident
+      officia soluta, libero amet assumenda doloremque nesciunt nostrum!
+      Exercitationem facilis possimus blanditiis explicabo nesciunt iusto
+      architecto, commodi cum perferendis porro, itaque quaerat dignissimos.
+      Quod nulla tempora minima ex error perspiciatis saepe laborum dolor ut
+      voluptates praesentium unde culpa corrupti expedita, eaque eum
+      necessitatibus autem molestiae corporis! Cumque nemo deleniti, nihil id
+      quos dolorem, nam cupiditate blanditiis aut eaque iure et cum vel tempora,
+      ducimus suscipit! Voluptate ducimus deserunt eaque facilis suscipit dolor
+      debitis omnis placeat asperiores, deleniti itaque illo tempore rerum,
+      saepe earum perspiciatis obcaecati. Ea blanditiis quae beatae quod fuga
+      minima nobis labore ullam obcaecati possimus placeat corrupti, sunt
+      maxime! Quo quis ea itaque distinctio est adipisci obcaecati molestias
+      voluptatem similique labore, cupiditate ad voluptatum harum iusto iste
+      aperiam rerum repellendus culpa, sequi impedit deserunt illum laudantium
+      fugiat! Accusamus soluta fuga illo dolore eveniet vitae. Error quia
+      obcaecati, reiciendis architecto a odit iure. Autem eligendi aut
+      consectetur, delectus, maxime iure nulla provident non assumenda possimus
+      perferendis quos illo officia eos dolorum architecto at vero qui commodi
+      magnam. Odit inventore earum ipsum sint ea sed nobis delectus culpa maxime
+      quaerat perferendis accusantium dolorum corrupti repellendus quos
+      blanditiis nostrum minus, magnam nulla labore libero quia ab cupiditate
+      eum? Voluptate facere quo alias eius accusantium tempora quibusdam ipsum
+      tenetur at, distinctio laborum ipsa adipisci ullam dolore sed beatae
+      molestias, architecto vero quia aspernatur pariatur voluptas rerum. Magni
+      blanditiis iste ab ipsam, quidem omnis enim dignissimos eius rerum
+      perferendis adipisci suscipit eum ducimus libero a tempora vero sunt
+      nostrum. Blanditiis impedit quia ab excepturi tempora atque eaque quae
+      cupiditate aspernatur laudantium amet maiores quam, a in mollitia? Dolorum
+      sed aperiam, voluptate natus laborum, tempora architecto cum alias magni
+      perspiciatis consequuntur sit tempore corporis illum recusandae unde dolor
+      esse vel voluptatibus quaerat, aspernatur quam veritatis. Omnis, quis
+      consectetur, quod quia temporibus minus placeat illum culpa dolore odit
+      nihil ipsam mollitia.
+    </p>
+  </body>
+  <body>
+    <h1>Form</h1>
+  </body>
+
+  <body>
+    <li><a href="#">Back to Top</a></li>
+  </body>
+</html>
